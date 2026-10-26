@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator Fisika</title>
+  <link rel="stylesheet" href="desaintampilansementara.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Kalkulator Fisika</h1>
+
+    <label for="mode">Cari</label>
+    <select id="mode">
+      <option value="kecepatan">Kecepatan</option>
+      <option value="jarak">Jarak</option>
+      <option value="waktu">Waktu</option>
+    </select>
+
+    <div id="box-jarak">
+      <label for="jarak">Jarak (m)</label>
+      <input id="jarak" type="number">
+    </div>
+
+    <div id="box-waktu">
+      <label for="waktu">Waktu (s)</label>
+      <input id="waktu" type="number">
+    </div>
+
+    <div id="box-kecepatan">
+      <label for="kecepatan">Kecepatan (m/s)</label>
+      <input id="kecepatan" type="number">
+    </div>
+
+    <button id="hitung">Hitung</button>
+    <p id="hasil"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #e8eef7;
+  color: #1f2a44;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  margin: 0;
+}
+
+.box {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 28px;
+  border-radius: 14px;
+  border-top: 6px solid #2563eb;
+  box-shadow: 0 8px 24px rgba(31, 42, 68, 0.12);
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 6px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+input.error {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+
+button {
+  margin-top: 22px;
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+#hasil {
+  margin: 20px 0 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+#hasil:empty {
+  display: none;
+}
+
+#hasil.salah {
+  background: #fef2f2;
+  border-left-color: #dc2626;
+  color: #991b1b;
+}
+
+#hasil strong {
+  display: block;
+  font-size: 20px;
+  color: #1d4ed8;
+}
